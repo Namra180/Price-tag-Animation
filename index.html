@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Animation-2D-price Tag</title>
+    <style>
+
+.box{
+    height:500px;
+    width:300px;
+    background-color: black;
+    margin:40px auto;
+    position: relative;
+}
+
+strong{
+    background-color: #ffc107;
+    display:inline-block;
+    padding:8px 15px;
+    font-size:20px;
+    font-weight: 800;;
+    position: absolute;
+    top:25px;
+    left:-15px;
+}
+
+strong::after{
+    content: '';
+    background-color: #bb7a03;
+    width:20px;
+    height: 20px;
+    position: absolute;
+    left:4px;
+    top:30px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+    </style>
+</head>
+<body>
+   
+
+    <div class="box">
+        <strong>59$.00</strong>
+     </div>
+    
+</body>
+</html>
